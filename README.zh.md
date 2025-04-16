@@ -58,16 +58,16 @@ Retypeset 是一款基于 [Astro](https://astro.build/) 框架的静态博客主
    ```bash
    # 克隆仓库
    git clone 仓库地址
-
+   
    # 进入项目目录
    cd 仓库名称
-
+   
    # 全局安装 pnpm（如果未安装）
    npm install -g pnpm
-
+   
    # 安装依赖
    pnpm install
-
+   
    # 启动开发服务器
    pnpm dev
    ```
@@ -119,3 +119,4 @@ Retypeset 是一款基于 [Astro](https://astro.build/) 框架的静态博客主
     <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=radishzzz/astro-theme-retypeset&type=Date" />
   </picture>
 </p>
+
