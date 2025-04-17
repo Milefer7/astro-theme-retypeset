@@ -14,15 +14,29 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 1. 拉取代码
+      # 1. 拉取代码（含 package.json）
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. 安装 pnpm、依赖、构建并缓存输出
+      # 2. 通过 corepack 精确控制 pnpm 版本
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # 根据项目需求指定版本
+          cache: pnpm
+
+      # 3. 激活 corepack 并锁定 pnpm 版本
+      - name: Enable corepack
+        run: corepack enable
+
+      - name: Pin pnpm version
+        run: corepack prepare pnpm@10.8.0 --activate
+
+      # 4. 使用 Astro 官方 Action
       - name: Install, build, and upload site
         uses: withastro/action@v3
         with:
-          package-manager: pnpm # 会自动读取 package.json 中的 packageManager
+          package-manager: pnpm # 自动使用已激活的 10.8.0 版本
 
   deploy:
     needs: build
@@ -31,7 +45,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      # 3. 将上一步产生的静态文件发布到 GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
