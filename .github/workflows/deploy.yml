@@ -14,13 +14,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 1. 拉取代码
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 2. 安装 pnpm、依赖、构建并缓存输出
       - name: Install, build, and upload site
         uses: withastro/action@v3
         with:
-          package-manager: pnpm@latest
+          package-manager: pnpm # 会自动读取 package.json 中的 packageManager
 
   deploy:
     needs: build
@@ -29,6 +31,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # 3. 将上一步产生的静态文件发布到 GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
