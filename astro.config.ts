@@ -30,7 +30,7 @@ const imageConfig = imageHostURL
 
 export default defineConfig({
   site: 'https://milefer7.github.io',
-  base: 'astro-theme-retypeset',
+  base: '',
   trailingSlash: 'always',
   prefetch: {
     prefetchAll: true,
