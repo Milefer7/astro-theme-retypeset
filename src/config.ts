@@ -4,20 +4,20 @@ export const themeConfig: ThemeConfig = {
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   site: {
     // site title
-    title: "博客",
+    title: "Jasper Jiang'Blog",
     // site subtitle
-    subtitle: 'Just Jump and Embrace Triumph😀',
+    subtitle: 'Just Jump and Embrace Triumph',
     // site description
-    description: 'none',
+    description: "",
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
-    i18nTitle: true, // true, false
+    i18nTitle: false, // true, false
     // author name
     author: 'Jasper Jiang',
     // site url
     url: 'https://milefer7.github.io/',
     // favicon url
     // recommended formats: svg, png or ico
-    favicon: '/icon/favicon.svg', // or https://example.com/favicon.svg
+    favicon: 'https://my-note-drawing-bed-1322822796.cos.ap-shanghai.myqcloud.com/picture/202504181320899.png', // or https://example.com/favicon.svg
   },
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 
@@ -56,13 +56,13 @@ export const themeConfig: ThemeConfig = {
     locale: 'zh', // zh, zh-tw, ja, en, es, ru
     // more languages
     // not fill in the locale code above again
-    moreLocales: ['en', 'zh-tw', 'ja', 'es', 'ru'], // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
+    moreLocales: [], // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
     // font styles for post text
     fontStyle: 'sans', // sans, serif
     // date format for posts
     dateFormat: 'YYYY-MM-DD', // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
     // gap between title and subtitle
-    titleGap: 2, // 1, 2, 3
+    titleGap: 3, // 1, 2, 3
     // enable KaTeX for mathematical formulas rendering
     katex: true, // true, false
   },
@@ -71,7 +71,7 @@ export const themeConfig: ThemeConfig = {
   // COMMENT SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   comment: {
     // enable comment system
-    enabled: true, // true, false
+    enabled: false, // true, false
     // waline comment system
     // https://waline.js.org/en/
     waline: {
@@ -93,43 +93,43 @@ export const themeConfig: ThemeConfig = {
   // COMMENT SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 
   // SEO SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
-  seo: {
-    // @twitter ID
-    twitterID: '@radishzz_',
-    // site verification
-    verification: {
-      // google search console
-      // https://search.google.com/search-console
-      google: 'AUCrz5F1e5qbnmKKDXl2Sf8u6y0kOpEO1wLs6HMMmlM',
-      // bing webmaster tools
-      // https://www.bing.com/webmasters
-      bing: '64708CD514011A7965C84DDE1D169F87',
-      // yandex webmaster
-      // https://webmaster.yandex.com
-      yandex: '',
-      // baidu search
-      // https://ziyuan.baidu.com
-      baidu: '',
-    },
-    // google analytics
-    // https://analytics.google.com
-    googleAnalyticsID: '',
-    // umami analytics
-    // https://cloud.umami.is
-    umamiAnalyticsID: '520af332-bfb7-4e7c-9386-5f273ee3d697',
-    // follow verification
-    // https://follow.is/
-    follow: {
-      // feed ID
-      feedID: '',
-      // user ID
-      userID: '',
-    },
-    // apiflash access key
-    // automatically generate website screenshots for open graph images
-    // get your access key at: https://apiflash.com/
-    apiflashKey: '',
-  },
+  // seo: {
+  //   // @twitter ID
+  //   twitterID: '@radishzz_',
+  //   // site verification
+  //   verification: {
+  //     // google search console
+  //     // https://search.google.com/search-console
+  //     google: 'AUCrz5F1e5qbnmKKDXl2Sf8u6y0kOpEO1wLs6HMMmlM',
+  //     // bing webmaster tools
+  //     // https://www.bing.com/webmasters
+  //     bing: '64708CD514011A7965C84DDE1D169F87',
+  //     // yandex webmaster
+  //     // https://webmaster.yandex.com
+  //     yandex: '',
+  //     // baidu search
+  //     // https://ziyuan.baidu.com
+  //     baidu: '',
+  //   },
+  //   // google analytics
+  //   // https://analytics.google.com
+  //   googleAnalyticsID: '',
+  //   // umami analytics
+  //   // https://cloud.umami.is
+  //   umamiAnalyticsID: '520af332-bfb7-4e7c-9386-5f273ee3d697',
+  //   // follow verification
+  //   // https://follow.is/
+  //   follow: {
+  //     // feed ID
+  //     feedID: '',
+  //     // user ID
+  //     userID: '',
+  //   },
+  //   // apiflash access key
+  //   // automatically generate website screenshots for open graph images
+  //   // get your access key at: https://apiflash.com/
+  //   apiflashKey: '',
+  // },
   // SEO SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 
   // FOOTER SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
@@ -142,12 +142,12 @@ export const themeConfig: ThemeConfig = {
       },
       {
         name: 'GitHub',
-        url: 'https://github.com/radishzzz/astro-theme-retypeset',
+        url: 'https://github.com/Milefer7',
       },
-      {
-        name: 'Twitter',
-        url: 'https://x.com/radishzz_',
-      },
+      // {
+      //   name: 'Twitter',
+      //   url: 'https://x.com/radishzz_',
+      // },
       // {
       //   name: 'Email',
       //   url: 'https://example@gmail.com',
@@ -164,9 +164,9 @@ export const themeConfig: ThemeConfig = {
     // docs: https://docs.astro.build/en/guides/prefetch/#prefetch-strategies
     linkPrefetch: 'viewport', // hover, tap, viewport, load
     // comment server url
-    commentURL: 'https://retypeset-comment.radishzz.cc',
+    // commentURL: 'https://retypeset-comment.radishzz.cc',
     // image hosting url
-    imageHostURL: 'https://image.radishzz.cc',
+    // imageHostURL: 'https://image.radishzz.cc',
     // custom google analytics js
     // for users who route analytics javascript to a customized domain
     // See https://gist.github.com/xiaopc/0602f06ca465d76bd9efd3dda9393738
@@ -174,7 +174,7 @@ export const themeConfig: ThemeConfig = {
     // custom umami analytics js
     // for users who deploy umami on their own, or route analytics javascript to a customized domain
     // see https://github.com/umami-software/umami/discussions/1026
-    customUmamiAnalyticsJS: 'https://js.radishzz.cc/jquery.min.js',
+    // customUmamiAnalyticsJS: 'https://js.radishzz.cc/jquery.min.js',
   },
   // PRELOAD SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 }

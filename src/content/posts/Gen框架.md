@@ -1,11 +1,16 @@
 ---
-title: Gen
+title: Gen框架
+description: 本文介绍了基于GORM的代码生成框架Gen的使用方法，包括最佳实践目录推荐、需要编写的部分以及框架自动生成的功能。
 published: 2025-01-26
 updated: 2025-04-13
 tags:
-  - 博客
+  - 大三
+  - 开发
+draft: false
 pin: 99
+toc: true
 lang: zh
+abbrlink: gen-framework
 ---
 
 
