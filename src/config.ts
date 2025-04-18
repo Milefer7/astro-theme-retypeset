@@ -4,9 +4,9 @@ export const themeConfig: ThemeConfig = {
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   site: {
     // site title
-    title: "Jasper Jiang'blog'",
+    title: "博客",
     // site subtitle
-    subtitle: 'Just Jump and Embrace Triumph 😀',
+    subtitle: 'Just Jump and Embrace Triumph😀',
     // site description
     description: 'none',
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
@@ -56,7 +56,7 @@ export const themeConfig: ThemeConfig = {
     locale: 'zh', // zh, zh-tw, ja, en, es, ru
     // more languages
     // not fill in the locale code above again
-    moreLocales: ['zh-tw', 'ja', 'en', 'es', 'ru'], // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
+    moreLocales: ['en'], // ['zh', 'zh-tw', 'ja', 'en', 'es', 'ru']
     // font styles for post text
     fontStyle: 'sans', // sans, serif
     // date format for posts
