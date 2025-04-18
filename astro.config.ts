@@ -29,9 +29,9 @@ const imageConfig = imageHostURL
   : {};
 
 export default defineConfig({
-  site: 'https://milefer7.github.io',
+  site: url,
   base: '',
-  trailingSlash: 'always',
+  trailingSlash: 'ignore',
   prefetch: {
     prefetchAll: true,
     defaultStrategy: linkPrefetch,
